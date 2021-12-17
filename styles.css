@@ -1,0 +1,21 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+
+body {
+    background-color: lightgray;
+}
+
+nav {
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.about-me {
+    margin-top: 100px;
+}
+
+.card-header {
+    color: white;
+}
