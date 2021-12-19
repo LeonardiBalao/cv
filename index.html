@@ -17,43 +17,250 @@
 </head>
 
 <body>
-    <nav class="bg-light container-fluid">
-        <a href="/cv/index.html" class="btn btn-link"><span style="padding: 5px;"><img src="./resources/flags/us.svg"
-                    alt="de" width="20px"></span>English</a>
-        <a href="/cv/pt-BR/index.html" class="btn btn-link"><span style="padding: 5px;"><img
-                    src="./resources/flags/br.svg" alt="de" width="20px"></span>Português</a>
-        <a href="/cv/de/index.html" class="btn btn-link"><span style="padding: 5px;"><img
-                    src="./resources/flags/de.svg" alt="de" width="20px"></span>Deutsch</a>
-    </nav>
-    <div class="container mt-3">
+    <!-- Language NavMenu -->
+    <nav class="bg-light container-fluid" id="navMenu"></nav>
+    <!-- Main container -->
+    <div class="container mt-3 mb-5">
+        <!-- Main card -->
         <div class="card text-center">
-            <div class="card-header bg-dark navbar-dark">
-                <strong>Introduction</strong>
+            <!-- Card Header -->
+            <div class="card-header bg-secondary navbar-dark">
+                Resume
             </div>
+            <!--  End of Card Header -->
+            <!-- Card Body -->
             <div class="card-body">
-                <img src="./resources/avatar.jpg" alt="Matheus Balão" width="200px"
-                    style="border-radius: 150px; border: 5px solid lightgray;">
+                <!-- Avatar -->
+                <img src="./resources/avatar.jpg" class="avatar" alt="Matheus Balão">
+                <!-- Card Title -->
                 <h1 class="card-title">Matheus Leonardi Balão</h1>
-                <h6 class="card-text mb-5"><i>Analysis and Systems Development, BD Business Management</i></h6>
-                <p>"I like working for clients who are trying to get their product or service onto the web.
+                <!-- Graduations -->
+                <h6>
+                    <i>
+                        Technologist in systems analysis and development,
+                        Bachelor of Business Administration
+                    </i>
+                </h6>
+                <!-- Introduction -->
+                <p>"I like working for clients who are wanting to get their product or service onto the web.
                     The work is typically very project focused and involves collaborating with a team that helps to
-                    coordinate the client’s needs into the end product. I have a reasonable experience in working with
+                    coinate the client’s needs into the end product. I have experience in working with
                     entrepenuers,
                     startups and organizations."</p>
                 <p><strong>The work could involve front-end, back-end, or full-stack web development.</strong></p>
-                <a href="/cv/summary.html" class="btn btn-link">More details ></a>
+                <!-- End of Introduction -->
+                <!-- Summary -->
+                <!-- Career -->
+                <a href="#career" class="btn btn-link" data-toggle="collapse">
+                    Career objectives >
+                </a>
+                <div class="collapse" id="career">
+                    <div class="card card-body text-left">
+                        <p>I am seeking to build a solid and long career in a great organization, to leverage broad
+                            development
+                            experience and hands-on technical expertise in a challenging role as a Full-stack Developer.
+                        </p>
+                    </div>
+                </div>
+                <!-- End of the career part-->
+                <!-- Expertise -->
+                <a class="btn btn-link" data-toggle="collapse" href="#expertise" role="button" aria-expanded="false"
+                    aria-controls="expertise">Expertise ></a>
+                <div class="collapse" id="expertise">
+                    <div class="card card-body text-left">
+                        <div class="row">
+                            <div class="col-3">
+                                <h6>Programming Languages</h6>
+                                <ul>
+                                    <li>Javascript</li>
+                                    <li>PHP 8</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h6>Back-end Frameworks</h6>
+                                <ul>
+                                    <li>Express</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h6>Front-end Frameworks</h6>
+                                <ul>
+                                    <li>React, Redux</li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+
+                                <h6>CSS Frameworks</h6>
+                                <ul>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <h6>Databases</h6>
+                                <ul>
+                                    <li>Postgres</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Expertise -->
+                <!-- Skills -->
+                <a class="btn btn-link" data-toggle="collapse" href="#skills" role="button" aria-expanded="false"
+                    aria-controls="skills">Skills ></a>
+                <div class="collapse" id="skills">
+                    <div class="card card-body text-left">
+                        <h6>Hard Skills</h6>
+                        <ul>
+                            <li>Object Oriented Design</li>
+                            <li>IT automation</li>
+                            <li>Full-stack Web Development</li>
+                        </ul>
+                        <h6>Soft Skills</h6>
+                        <ul>
+                            <li>Good communication</li>
+                            <li>Time management</li>
+                            <li>Problem-solving skills</li>
+                            <li>Adaptability and flexibility</li>
+                            <li>Ability to accept feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of Skills -->
+                <!-- Employment -->
+                <a class="btn btn-link" data-toggle="collapse" href="#employment" role="button" aria-expanded="false"
+                    aria-controls="employment">Employment History ></a>
+                <div class="collapse" id="employment">
+                    <div class="card card-body text-left">
+                        <h6>WordPress Developer & Websites Administrator | 2012 - 2021</h6>
+                        <p>
+                            Responsible for the design, implementation and management of websites using WordPress.
+                            Front-end and back-end development of all company properties and guide website architecture
+                            so sites are specifically designed with mobile-first
+                            responsiveness and are user-friendly. Development of best practices and conduct training
+                            with staff as well as troubleshoot and resolve website problems for clients and co-workers.
+                        </p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="#clients" class="btn-link text-left mb-3" data-toggle="collapse"
+                            role="button">Clients</a>
+                        <div class="card card-body text-left collapse mb-3" id="clients">
+                            <a href="https://amigosdealfredoandersen.com.br">Sociedade Amigos de Alfredo Andersen</a>
+                            <a href="https://institutoprincesabenedikte.com">Instituto Princesa Benedikte</a>
+                            <a href="https://apoiosinfonicapr.com.br">Instituto de Apoio à Orquestra Sinfônicado
+                                Paraná</a>
+                            <a href="http://www.andersenballao.com.br">Andersen Ballão Advocacia</a>
+                            <a href="#">Tamy Yoga</a>
+                        </div>
+                        <h6>Junior Software Engineer, HSBC Global Technology | 2008 - 2009</h6>
+                        <p>
+                            Responsible for maintaining Java-based applications, contributing in all phases of the
+                            development lifecycle, maintaining up to date code documentation.
+                        </p>
+                    </div>
+                </div>
+                <!-- End of employment part -->
+                <!-- Education -->
+                <a class="btn btn-link" data-toggle="collapse" href="#education" role="button" aria-expanded="false"
+                    aria-controls="education">Education ></a>
+                <div class="collapse" id="education">
+                    <div class="card card-body text-left">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <a href="https://www.pucpr.br"><img class="card-img-top" src="./resources/puc.PNG"
+                                            alt="pucpr"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pontifical Catholic University</h5>
+                                        <p class="card-text"><strong>Certified Tech</strong> Analysis and Systems
+                                            Development.</p>
+                                        <p class="card-text"><i>2021-2023.</i></p>
+                                        <a href="https://www.pucpr.br" class="btn-link">Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <a href="https://www.pucpr.br"><img class="card-img-top" src="./resources/puc.PNG"
+                                            alt="pucpr"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pontifical Catholic University</h5>
+                                        <p class="card-text"><strong>Master of Business Administration</strong> in
+                                            Commercial Management</p>
+                                        <p class="card-text"><i>2018-2020.</i></p>
+                                        <a href="https://www.pucpr.br" class="btn-link">Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <a href="https://www.pucpr.br"><img class="card-img-top" src="./resources/puc.PNG"
+                                            alt="pucpr"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pontifical Catholic University</h5>
+                                        <p class="card-text"><strong>Bachelors Degree in Business Management</strong>
+                                        </p>
+                                        <p class="card-text"><i>2008-2012.</i></p>
+                                        <a href="https://www.pucpr.br" class="btn-link">Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Education -->
+                <!-- Courses and Certificates -->
+                <a class="btn btn-link" data-toggle="collapse" href="#courses" role="button" aria-expanded="false"
+                    aria-controls="courses">Courses and Certificates ></a>
+                <div class="collapse" id="courses">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+                <!-- Projects -->
+                <a class="btn btn-link" data-toggle="collapse" href="#projects" role="button" aria-expanded="false"
+                    aria-controls="projects">Projects ></a>
+                <div class="collapse" id="projects">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+                <!-- End of projects -->
+                <!-- Contact information -->
+                <a class="btn btn-link" data-toggle="collapse" href="#contact" role="button" aria-expanded="false"
+                    aria-controls="contact">Contact ></a>
+                <div class="collapse" id="contact">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+                <!-- End of Contact information -->
+                <!-- End of Summary -->
             </div>
+            <!-- End of Card Body -->
+            <!-- Card Footer -->
             <div class="card-footer text-muted">
                 Curitiba/PR - Brazil - December 17th, 2021.
             </div>
+            <!-- End of Card Footer -->
         </div>
+        <!-- End of main card -->
     </div>
-    <footer class="container-fluid fixed-bottom text-center bg-light">
-        <p class="mt-3">Matheus Leonardi Balão</p>
-    </footer>
+    <!-- End of main container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./components/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
