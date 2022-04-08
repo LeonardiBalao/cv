@@ -31,3 +31,7 @@ body {
     border: 5px solid lightgray;
     width: 200px;
 }
+
+#expertise .row:first-child {
+    margin-bottom: 10px;
+}
