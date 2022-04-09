@@ -30,6 +30,10 @@ body {
 
 /* Card CSS */
 
+.card {
+    margin-bottom: 50px;
+}
+
 .card-header {
     color: white;
 }
