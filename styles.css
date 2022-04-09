@@ -12,7 +12,6 @@ html, body {
 /* Setting main colors */
 
 body {
-    background-color: lightgray;
     color: gray;
     background-image: url("/resources/background.jpg");
 }
